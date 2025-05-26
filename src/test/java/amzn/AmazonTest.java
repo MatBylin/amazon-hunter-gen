@@ -2,6 +2,7 @@ package amzn;
 
 import amzn.base.BaseAmazon;
 import amzn.utils.SmsService;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -38,7 +39,10 @@ public class AmazonTest extends BaseAmazon {
         }
     }
 
+    @SneakyThrows
     String scrapeDataFromUrl(String timestamp, String name, String maxPrice, String url) {
+        driver.get("https://amazon.pl");
+        Thread.sleep(1000);
         driver.get(url);
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         try {
