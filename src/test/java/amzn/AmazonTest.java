@@ -4,6 +4,7 @@ import amzn.base.BaseAmazon;
 import amzn.utils.SmsService;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -23,6 +24,8 @@ public class AmazonTest extends BaseAmazon {
 
     @Test
     public void amazon() {
+        ((JavascriptExecutor) driver).executeScript("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})");
+
         String timestamp = getExecutionTimeStamp();
         for (var product : PRODUCTS) {
             String amazonPrice = scrapeDataFromUrl(timestamp, product.get(0), product.get(1), product.get(2));
