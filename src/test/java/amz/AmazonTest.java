@@ -30,6 +30,7 @@ public class AmazonTest extends BaseAmazon {
                 log.info("Found price lower than my threshold!");
                 SmsService.sendSms(scrapedPrice, product.getName());
             }
+            randomWait();
         }
     }
 

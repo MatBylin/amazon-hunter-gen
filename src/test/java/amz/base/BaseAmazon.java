@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 @Slf4j
 public abstract class BaseAmazon {
@@ -76,5 +77,10 @@ public abstract class BaseAmazon {
         } catch (IOException e) {
             throw new IllegalStateException("There was problem while creating csv file!", e);
         }
+    }
+
+    @SneakyThrows
+    protected void randomWait() {
+        Thread.sleep(new Random().nextInt(1000 - 500 + 1) + 500);
     }
 }
