@@ -22,12 +22,13 @@ public class AmazonTest extends BaseAmazon {
     @Test
     public void amazon() {
         for (var product : readProducts()) {
-            String amazonPrice = scrapeDataFromUrl(product);
-            log.info("Found price of: {}, for product: {}", amazonPrice, product.getName());
+            String scrapedPrice = scrapeDataFromUrl(product);
+            logPrice(timestamp, scrapedPrice, product);
 
-            if (checkForPriceBelowThreshold(product, amazonPrice)) {
+
+            if (checkForPriceBelowThreshold(product, scrapedPrice)) {
                 log.info("Found price lower than my threshold!");
-                SmsService.sendSms(amazonPrice, product.getName());
+                SmsService.sendSms(scrapedPrice, product.getName());
             }
         }
     }

@@ -30,3 +30,13 @@ jobs:
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
           TWILIO_RECEIVER: ${{ secrets.TWILIO_RECEIVER }}
         run: mvn clean test
+
+      - name: Commit and push data
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add amz.csv
+          git commit -m "Update watch prices - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

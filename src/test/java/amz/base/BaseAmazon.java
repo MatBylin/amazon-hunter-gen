@@ -1,5 +1,6 @@
 package amz.base;
 
+import amz.model.Product;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -61,5 +64,17 @@ public abstract class BaseAmazon {
     private void visitAmazonBaseMainPage() {
         driver.get("https://amazon.pl");
         Thread.sleep(1000);
+    }
+
+    protected void logPrice(String timestamp, String scrapedPrice, Product product) {
+        log.info("Found price of: {}, for product: {}", scrapedPrice, product.getName());
+
+        try (FileWriter writer = new FileWriter("amz.csv", true)) {
+            writer.append(String.join(",", timestamp, product.getName(), scrapedPrice));
+            writer.append("\n");
+
+        } catch (IOException e) {
+            throw new IllegalStateException("There was problem while creating csv file!", e);
+        }
     }
 }
