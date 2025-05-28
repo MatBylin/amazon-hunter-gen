@@ -10,3 +10,15 @@ products:
   - name: "DJI mini 4k"
     url: "https://www.amazon.pl/DJI-doroslych-transmisja-akumulator-inteligentny/dp/B0CXJ9GM3G/ref=sr_1_1?crid=2MDZ0ABMJZCKB&dib=eyJ2IjoiMSJ9.IVgisVHQx6S4O_csqbyFKzaMpxRs6tTPJE0W2yvFkcZ7otrL2pvmD2ilQCtmIndEewkycqVLfczS2G-g5Wd2gaumADdvlb3VvrS_bU2Xe-S4vNOPaew5hMw7B8qHFEDLrwmVjGjPWpgb1uNDskwcL8CmW2yQpCL088Qi1LrbdJD8KFANvyqc_5wY3UuAvSASwF10PYli0RGNSBaqZA791sxCSKRTHas23BTp8jTdUuIBDqmri-ITgrU3X1tbk-WlJ4odW-odSzOHmRxSFozB6rO4XOUhAwbt_L2Y5a5jKrc.jKOrS7cMUL_8W7duCp6bovwr58rRMy2fVPSgopXGv8Y&dib_tag=se&keywords=dji%2Bmini%2B4k&qid=1748282697&sprefix=dji%2Bmini%2Caps%2C125&sr=8-1&th=1"
     threshold: "1199"
+    
+  - name: "Seiko SNXS75"
+    url: "https://www.amazon.pl/Seiko-Zegarek-m%C4%99ski-srebrny-bransoletka/dp/B0058VK95M/ref=zg_bs_g_20849277031_d_sccl_33/262-5912608-7782362?th=1"
+    threshold: "560"
+
+  - name: "G-shock GW-M5610U"
+    url: "https://www.amazon.pl/Casio-Uniseks-G-Shock-Zegarek-Czarny/dp/B09BCPP68Q/ref=zg_bs_g_20849277031_d_sccl_23/262-5912608-7782362?psc=1"
+    threshold: "380"
+    
+  - name: "Orient Bambino"
+    url: "https://www.amazon.pl/Orient-Zegarek-RA-AC0P02L10B-Niebieski-swobodny/dp/B0DB6NQM8Z/ref=sr_1_29?__mk_pl_PL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=29CG96V9TBK69&dib=eyJ2IjoiMSJ9.r6HTNxObTFePQQPyt_kcq_9KhY_uIaVQcxHNtHVijpo93fTVXeE8NhEcYasHYs5riMHk5_IYII9NOE0QkPjFhpvwY21NShK-WK9u9QV4A62fk_y0RtMQpVw21zsx881eKeMcNkvqKi2LWGZiYfIXSI3lSHW3emPdoKg8RFV54YAt-XPe3uvxGMXdd0Skejf_k2ljAyyd3VmI5vEtzENKKx0Pi-4Hj5CoMkftnWLkJUdl6nNxYXkMU805LCw8J8vZmK3W9JtvepjidvsXES2tEkJp83TTlW3zaNWipbPdeGk.sumnHQfIv7hQZ7hq-estJsoOr-ZZarEy_IJ7Q-LgvL4&dib_tag=se&keywords=orient&qid=1748446916&refinements=p_n_feature_twenty-six_browse-bin%3A96331526031%2Cp_123%3A82392&rnid=91049082031&sprefix=orient%2Caps%2C96&sr=8-29"
+    threshold: "686"
