@@ -44,7 +44,7 @@
     let chartInstance;
     let allRows = [];
 
-    fetch('data.csv')
+    fetch('amz.csv')
         .then(response => response.text())
         .then(csv => {
             const parsed = Papa.parse(csv, { header: true });
