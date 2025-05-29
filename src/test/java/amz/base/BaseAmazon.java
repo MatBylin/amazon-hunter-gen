@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 import java.util.Random;
 
 @Slf4j
@@ -70,12 +71,14 @@ public abstract class BaseAmazon {
     protected void logPrice(String timestamp, String scrapedPrice, Product product) {
         log.info("Found price of: {}, for product: {}", scrapedPrice, product.getName());
 
-        try (FileWriter writer = new FileWriter("amz.csv", true)) {
-            writer.append(String.join(",", timestamp, product.getName(), scrapedPrice));
-            writer.append("\n");
+        if (!Objects.equals(scrapedPrice, "0")) {
+            try (FileWriter writer = new FileWriter("amz.csv", true)) {
+                writer.append(String.join(",", timestamp, product.getName(), scrapedPrice));
+                writer.append("\n");
 
-        } catch (IOException e) {
-            throw new IllegalStateException("There was problem while creating csv file!", e);
+            } catch (IOException e) {
+                throw new IllegalStateException("There was problem while creating csv file!", e);
+            }
         }
     }
 
