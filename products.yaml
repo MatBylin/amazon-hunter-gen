@@ -9,7 +9,7 @@ products:
 
   - name: "DJI mini 4k"
     url: "https://www.amazon.pl/DJI-doroslych-transmisja-akumulator-inteligentny/dp/B0CXJ9GM3G/ref=sr_1_1?crid=2MDZ0ABMJZCKB&dib=eyJ2IjoiMSJ9.IVgisVHQx6S4O_csqbyFKzaMpxRs6tTPJE0W2yvFkcZ7otrL2pvmD2ilQCtmIndEewkycqVLfczS2G-g5Wd2gaumADdvlb3VvrS_bU2Xe-S4vNOPaew5hMw7B8qHFEDLrwmVjGjPWpgb1uNDskwcL8CmW2yQpCL088Qi1LrbdJD8KFANvyqc_5wY3UuAvSASwF10PYli0RGNSBaqZA791sxCSKRTHas23BTp8jTdUuIBDqmri-ITgrU3X1tbk-WlJ4odW-odSzOHmRxSFozB6rO4XOUhAwbt_L2Y5a5jKrc.jKOrS7cMUL_8W7duCp6bovwr58rRMy2fVPSgopXGv8Y&dib_tag=se&keywords=dji%2Bmini%2B4k&qid=1748282697&sprefix=dji%2Bmini%2Caps%2C125&sr=8-1&th=1"
-    threshold: "1199"
+    threshold: "1100"
     
   - name: "Seiko SNXS75"
     url: "https://www.amazon.pl/Seiko-Zegarek-m%C4%99ski-srebrny-bransoletka/dp/B0058VK95M/ref=zg_bs_g_20849277031_d_sccl_33/262-5912608-7782362?th=1"
